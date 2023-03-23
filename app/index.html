@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsa de Valores</title>
+</head>
+<body>
+    <header>
+        <h1>Bolsa de Valores - Cadastro</h1>
+        <h2>Registro de negociações</h2>
+    </header>
+
+    <main>
+        <fieldset>
+            <form class="formulario" action="">
+                <div>
+                    <label for="data">Data da negociação: </label>
+                    <input id="data" type="date" name="data" required>
+                </div>
+                <br>
+                <div>
+                    <label for="quantidade">Quantidade de ações vendidas: </label>
+                    <input id="quantidade" type="number" min="1" max="100" name="quantidade" required>
+                </div>
+                <br>
+                <div>
+                    <label for="valor">Valor da negociação </label>
+                    <input id="valor" type="number" min="0" max="1000000.0" name="valor" required>
+                </div>
+                <br>
+                <div class="enviar">
+                    <button id="enviar" type="submit">Cadastrar</button>
+                </div>
+                <br>
+
+                <div class="filtro-div">
+                    <input id="filtro-input" type="number">
+                    <button id="filtro" type="submit">Filtrar</button>
+                </div>
+            </form>
+        </fieldset>
+
+        <div class="table-div">
+            <h2>Registro das negociações</h2>
+    
+            <table class="tabela table-bordered">
+                <thead>
+                    <th>data</th>
+                    <th>quantidade</th>
+                    <th>valor</th>
+                </thead>
+                <tbody>
+    
+                </tbody>
+                </table>
+        </div>
+    </main>
+    
+    <script type="module" src="./js/main/programa.js"></script>
+
+</body>
+</html>
